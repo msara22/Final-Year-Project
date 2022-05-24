@@ -5,6 +5,7 @@ In this repo, I have presented my final year project. The topic of my project is
 The main purpose of this paper is to find an efficient method for energy consumption prediction in smart homes. The proposed technique consists of five modules, namely data acquisition, data preprocessing, prediction, performance evaluation and application. For this work, the data collected is from residential smart buildings located in South Korea, Seoul. 
 
 **Hardware and Software Specifications used in the proposed model implementations:**
+
 Software : Spyder 5.1.5
            Jupiter Notebook
            Matlab
