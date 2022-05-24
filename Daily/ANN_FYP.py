@@ -10,7 +10,6 @@ import numpy as np
 import matplotlib as plt
 import math
 import tensorflow as tf
-import pickle
 import matplotlib.pyplot as plt
 from tensorflow.keras import Model
 from tensorflow.keras import Sequential
@@ -20,7 +19,7 @@ from tensorflow.keras.layers import Dense, Dropout
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.losses import MeanSquaredLogarithmicError
 
-df = pd.read_csv("C://Users//sarvinoz.toshpulotov//Desktop//FYP//Codes//att2//Dataset2.csv")
+df = pd.read_csv("Dataset2.csv")
 df
 
 X = df.iloc[:,8:-1].values
@@ -50,8 +49,6 @@ ann.compile(optimizer = "adam",loss = "mean_absolute_error" )
 ann.fit(X_train, y_train, epochs = 20, verbose=1,  batch_size =32)
 y_pred = ann.predict(X_test)
 y_pred_train = ann.predict(X_train)
-
-pickle.dump(ann, open('model_ann.pkl', 'wb'))
 
 from sklearn.metrics import mean_absolute_error, mean_squared_error, mean_absolute_percentage_error
 mae= mean_absolute_error(y_test, y_pred)
