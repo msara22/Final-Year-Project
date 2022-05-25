@@ -6,17 +6,17 @@ The main purpose of this paper is to find an efficient method for energy consump
 
 **Hardware and Software Specifications used in the proposed model implementations:**
 
-Software : Spyder 5.1.5
+**Software :** Spyder 5.1.5
            Jupiter Notebook
            Matlab
-Libraries:	Tensorflow
+**Libraries:** Tensorflow
             Keras
             Matplotlib
             NumPy
             Pandas
             Sklearn
             
-Framework:  Flask
+**Framework:**  Flask
 
 **Machine Learning Models:**
 1. Artificial Neural Networks
